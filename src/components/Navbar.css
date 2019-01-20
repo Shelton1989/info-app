@@ -1,0 +1,33 @@
+.navbar {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 9px 2px rgba(122,122,122,0.82);
+}
+.container {
+    max-width: 80%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.logo {
+    height: 40px;
+    padding: 0.5rem;
+}
+.navcontainer {
+    width: 80%;
+}
+.navgroup {
+    display: flex;
+    list-style: none;
+    font-size: 1.125rem;
+    float: right;
+}
+.navlink {
+    padding: 1rem;
+    text-decoration: none;
+    color: gray;
+}
+.navlink:hover {
+    background-color: rgba(0,0,0,0.08);
+    transition: 0.1s ease-in-out;
+}
