@@ -1,14 +1,15 @@
 import React from 'react';
+import Typrography from '@material-ui/core/Typography';
 
-class Title extends React.Component {
-    render(){
-        return(
-            <div>
-                <h1>Weather</h1>
-                <p>Please type in your city to get accurate results.</p>
-            </div>
-        );
-    }
-}
+const Title = () => (
+    <div>
+        <Typrography variant="title" gutterBottom>
+            Weather
+        </Typrography>
+        <Typrography variant="body1">
+            Enter a different city below to check results.
+        </Typrography>
+    </div>
+)
 
 export default Title;

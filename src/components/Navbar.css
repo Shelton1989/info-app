@@ -10,8 +10,9 @@
     display: flex;
 }
 .logo {
-    height: 40px;
-    padding: 0.5rem;
+    height: 50px;
+    display: block;
+    padding: 0.25rem;
 }
 .navcontainer {
     width: 80%;

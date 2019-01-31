@@ -9,31 +9,44 @@
 }
 .col-1 {
   width: 10%;
+  display: block;
 }
 .col-2 {
   width: 20%;
+  display: block;
 }
 .col-3 {
   width: 30%;
+  display: block;
 }
 .col-4 {
   width: 40%;
+  display: block;
 }
 .col-5 {
   width: 50%;
+  display: block;
 }
 .col-6 {
   width: 60%;
+  display: block;
 }
 .col-7 {
   width: 70%;
+  display: block;
 }
 .col-8 {
   width: 80%;
+  display: block;
 }
 .col-9 {
   width: 90%;
+  display: block;
 }
 .col-10 {
   width: 100%;
+  display: block;
+}
+.padding {
+  padding: 1.75rem;
 }

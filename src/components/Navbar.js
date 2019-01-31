@@ -1,25 +1,34 @@
 import React, {Component} from 'react';
 import './Navbar.css';
-import logo from '../img/navlogocolor.png';
+import logo from '../img/sw-logo.png';
+import PropTypes from 'prop-types';
+import {withStyles} from '@material-ui/core/styles'
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 
-class Navbar extends Component {
-    render(){
-        return (
-            <div className="navbar">
-                <div className="container">
-                    <a href="../index.html"><img className="logo" alt="site logo" src={logo}/></a>
-                    <div className="navcontainer">
-                        <ul className="navgroup">
-                            <li><a className="navlink" href="#">Home</a></li>
-                            <li><a className="navlink" href="#">About</a></li>
-                            <li><a className="navlink" href="#">Services</a></li>
-                            <li><a className="navlink" href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        );
-    }
-}
+const styles = {
+    root: {
+        flexGrow: 1,
+    },
+};
 
-export default Navbar;
+function SimpleAppBar(props) {
+    const { classes } = props;
+  
+    return (
+      <div className={classes.root}>
+        <AppBar position="static" color="default">
+          <div className="container">
+            <a href="./index.html"><img className="logo" src={logo}></img></a>
+          </div>
+        </AppBar>
+      </div>
+    );
+  }
+  
+  SimpleAppBar.propTypes = {
+    classes: PropTypes.object.isRequired,
+  };
+  
+  export default withStyles(styles)(SimpleAppBar);
